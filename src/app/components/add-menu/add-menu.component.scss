@@ -1,0 +1,26 @@
+.elementCounter {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.element {
+    margin: auto;
+    padding: 10px;
+}
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+button:active {
+    background-color: lightgray;
+}
+.elementSubtract {
+
+}
+.elementName {
+}
+.elementAdd {
+
+}

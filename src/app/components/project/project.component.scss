@@ -1,0 +1,46 @@
+.elementCounter {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin: 4px;
+}
+.element {
+    margin: auto;
+    padding: 10px;
+}
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+button:active {
+    background-color: lightgray;
+}
+.elementSubtract {
+
+}
+.elementName {
+}
+.elementAdd {
+
+}
+
+.title {
+    font-family: Verdana;
+    display: flex;
+    margin: 4px;
+    padding: 4px;
+    align-items: center;
+}
+.title button {
+    font-size: large;
+    margin: 12px;
+}
+.container {
+    display: flex;
+    // float: left;
+    // align-self: center;
+}
+
+

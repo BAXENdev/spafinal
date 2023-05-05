@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Create A New Project</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input matNativeControl type="text" class="form-control" required formControlName="name">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+
+
+<div class="content">
+<button mat-raised-button color="primary" [routerLink]="'/project/new'">New Project</button>
+<button mat-raised-button color="secondary" (click)="generateSample()">Generate Sample</button>
+</div>
+<br>
+<div class="content">
+  <ng-container *ngFor="let projectInstance of projectList">
+    <a [routerLink]="['/project', projectInstance.name]">
+      <div class="gallery">
+          <img src="../../../assets/minecraft-world-pictures/{{projectInstance.image}}" width="600" height="400">
+          <div class="desc">{{projectInstance.name}}</div>
+      </div>
+    </a>
+  </ng-container>
+</div>

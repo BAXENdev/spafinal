@@ -1,0 +1,38 @@
+
+<div class="title">
+    <h1>{{projectName}}</h1>
+    <button mat-raised-button (click)="saveProject()">Save</button>
+</div>
+
+<!-- <div class="elementCounter">
+    <button class="element elementSubtract">-</button>
+    <i class="icon-minecraft icon-minecraft-dirt"></i>
+    <p class="element elementName">Dirt</p>
+    <p class="element elementCount">3</p>
+    <button class="element elementAdd">+</button>
+</div> -->
+
+<div class="container" *ngFor="let projectItem of projectItems">
+    <div class="elementCounter">
+        <!-- <button class="element elementSubtract">-</button> -->
+        <i class="icon-minecraft {{getCss(projectItem.item)}}"></i>
+        <p class="element elementName">{{getLabel(projectItem.item)}}</p>
+        <p class="element elementCount">{{projectItem.count}}</p>
+        <!-- <button class="element elementAdd">+</button> -->
+    </div>
+</div>
+
+<br>
+
+<h1>Add Items</h1>
+
+<!-- <app-add-menu [addToItem]="addToItem" [subtractFromItem]="subtractFromItem"></app-add-menu> -->
+<ng-container class="container" *ngFor="let minecraftItem of getMinecraftItems()">
+    <div class="elementCounter">
+        <button class="element elementSubtract" (click)="subtractFromItem(minecraftItem.name)">-</button>
+        <i class="icon-minecraft {{minecraftItem.css}}"></i>
+        <p class="element elementName">{{minecraftItem.label}}</p>
+        <button class="element elementAdd" (click)="addToItem(minecraftItem.name)">+</button>
+    </div>
+</ng-container>
+

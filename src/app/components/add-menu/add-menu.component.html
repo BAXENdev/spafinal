@@ -1,0 +1,9 @@
+
+<ng-container class="container" *ngFor="let minecraftItem of getMinecraftItems()">
+    <div class="elementCounter">
+        <button class="element elementSubtract" (click)="subtractFromItem(minecraftItem.name)">-</button>
+        <i class="icon-minecraft {{minecraftItem.css}}"></i>
+        <p class="element elementName">{{minecraftItem.label}}</p>
+        <button class="element elementAdd" (click)="addToItem(minecraftItem.name)">+</button>
+    </div>
+</ng-container>
